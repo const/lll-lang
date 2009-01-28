@@ -1,24 +1,37 @@
 <html>
  <head>
-  <title>LLL implementation plan</title>
+  <title>LLL Implementation Plan</title>
  </head>
  <body>
   <p>This file contains the current plan for the project.</p>
   <ol>
-   <li>Implement ETL language for LLVM assembler (will be use for asm sections).</li>
-   <li>Write compiler to from ETL LLVM ASM to LLVM ASM that runs on JVM.</li>
-   <li>Raw (Non-GC) library
+   <li>
+    <p>Implement ETL language for LLVM assembler (will be use for asm sections). 
+     Write compiler to from ETL LLVM ASM to LLVM ASM that runs on JVM (Scala?).</p>
+    <ol>
+     <li>Simple language core with low level types</li>
+     <li>Structs</li>
+     <li>Tuples</li>
+     <li>Unions</li>
+     <li>Arithmentics</li>
+     <li>Jumps/conditions</li>
+    </ol>
+   </li>
+   <li>
+    <p>Raw (Non-GC) library</p>
     <ol>
      <li>Unit Testing and FFI</li>
      <li>Binary IO</li>
      <li>Encoding Support (Unicode, Ascii, One-byte) (FFI) and IO</li>  
      <li>Non-GC collections</li>
+     <li>Attempt non-GC implementation of ETL Parser</li>
     </ol>
    </li>
    <li>Look at OpenJDK GC</li>
    <li>Try to write a similar GC in BitC-like LLL language, designing language during the process</li>
    <li>Try to write compiler from LLL to LLVM ASM</li>
-   <li>Try to write ETL parser using language extensions for GC objects
+   <li>
+    <p>Try to write ETL parser using language extensions for GC objects</p>
     <ol>
      <li>GC Streams, GC Closures, GC Collections, Lazy</li>
      <li>Resolver infrastructure</li>
