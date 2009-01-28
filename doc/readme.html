@@ -1,0 +1,36 @@
+<html>
+ <head>
+  <title>LLL Project Description</title>
+ </head>
+ <body>
+  <p>
+  This project contains prototype of an experimental low level language.
+  The language has the following goals:
+  </p>
+  <ul>
+   <li>It should target LLVM</li>
+   <li>It shoudl be low-level enough to represent any effect possible on LLVM</li>
+   <li>It should allow inline LLVM instructions</li>
+   <li>It should be high-level enough to be usable</li>
+   <li>The definition should be layered and modular</li>
+  </ul>
+  <p>The language is targeted for the following tasks:
+  <ul>
+   <li>It should be possible and easy to implement a good precise garbage collector in it.</li>
+   <li>It should be possible and easy to have a precise GC subruntime in it (like managed C++).</li>
+   <li>It should be possible and easy to write ETL parser in it (depends on GC).</li>
+   <li>It should be possible and easy to write a minimal self-hosting compiler (depends on GC).</li>
+  </ul>
+  <p>The intitial bootstrap compiler will be in Scala and it will use ETL parser.
+  <p>The sources of inspiration:
+  <ul>
+   <li>BitC</li>
+   <li>Managed C++</li>
+   <li>LLVM</li>
+  </ul>
+  <p>Project priority:
+  <ul>
+   <li>Very Low (I will work on the project only when I will have an interesting idea).</li>
+  </ul>
+ </body>
+</html>

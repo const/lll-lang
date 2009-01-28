@@ -1,0 +1,33 @@
+<html>
+ <head>
+  <title>LLL implementation plan</title>
+ </head>
+ <body>
+  <p>This file contains the current plan for the project.</p>
+  <ol>
+   <li>Implement ETL language for LLVM assembler (will be use for asm sections).</li>
+   <li>Write compiler to from ETL LLVM ASM to LLVM ASM that runs on JVM.</li>
+   <li>Raw (Non-GC) library
+    <ol>
+     <li>Unit Testing and FFI</li>
+     <li>Binary IO</li>
+     <li>Encoding Support (Unicode, Ascii, One-byte) (FFI) and IO</li>  
+     <li>Non-GC collections</li>
+    </ol>
+   </li>
+   <li>Look at OpenJDK GC</li>
+   <li>Try to write a similar GC in BitC-like LLL language, designing language during the process</li>
+   <li>Try to write compiler from LLL to LLVM ASM</li>
+   <li>Try to write ETL parser using language extensions for GC objects
+    <ol>
+     <li>GC Streams, GC Closures, GC Collections, Lazy</li>
+     <li>Resolver infrastructure</li>
+     <li>ETL parser</li>
+     <li>Min XML parser</li>
+     <li>XML catalog support</li>
+    </ol>
+   </li>
+   <li>Try to write self-hosting compiler to bytecode</li>
+  </ol>
+ </body>
+</html>
